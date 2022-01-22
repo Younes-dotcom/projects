@@ -1,0 +1,95 @@
+
+
+#city{
+    position: absolue;
+    width: 200%;
+    height: 1000px;
+    background: url("https://c8.alamy.com/comp/J6J088/seamless-cartoon-city-background-vector-illustration-with-separate-J6J088.jpg");
+    background-position: right;
+    transition: all 2s 1s;
+}
+
+#city:hover{
+    background-position: left;
+}
+
+p:hover{
+    background-color: white;
+}
+
+
+
+#car{
+    width: 200%;
+    height: 800px;
+    transition: margin 4s 0.5s;
+}
+
+
+
+.traffic{
+    width: 86px;
+    position: absolute;
+    top: 208px;
+    left: 800px;
+    
+}
+
+#green{
+    display: none;
+    transition: 2s;
+
+}
+
+
+#car:active .rwayd{
+    transform: rotate(50turn);
+    margin-left: 6000px;
+
+  
+}
+
+#car:active{
+    margin-left: 6000px;
+}
+
+#car:active #red{
+    display: none;
+}
+
+#car:active #green{
+    display: block;
+}
+
+#car:active #city{
+    background-position: left;
+
+}
+
+#mycar{
+    height: 312px;
+    width: 787px;
+    margin-top: 550px;
+    
+}
+
+.rwayd1{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    left: 621px;
+    top: 183px;
+    transition: transform 8s 0.5s , margin 4s 0.5s;
+    margin-top: 550px;
+  }
+  
+  
+.rwayd2{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    left: 108px;
+    top: 183px;
+    transition: transform 8s 0.5s , margin 4s 0.5s;
+    margin-top: 550px;
+  }
