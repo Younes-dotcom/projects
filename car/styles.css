@@ -1,0 +1,104 @@
+#city{
+    position: absolue;
+    width: 200%;
+    height: 500px;
+    background: center/contain url("https://c8.alamy.com/comp/J6J088/seamless-cartoon-city-background-vector-illustration-with-separate-J6J088.jpg");
+    background-position: right;
+    transition: all 4s 1s;
+}
+
+body:active #city{
+    background-position: bottom 0px right 7000px;
+
+}
+
+#city:active{
+    scroll-padding-right: 100px;
+}
+
+
+#car{
+    width: 200%;
+    height: 400px;
+    transition: margin 8s 0.5s;
+}
+
+
+
+.traffic{
+    width: 26px;
+    position: absolute;
+    top: 226px;
+    left: 404px;
+    
+}
+
+#green{
+    display: none;
+    transition: 2s;
+
+}
+
+
+#car:active .rwayd{
+    transform: rotate(50turn);
+    margin-left: 6000px;
+
+  
+}
+
+#car:active{
+    margin-left: 6000px;
+}
+
+#car:active #red{
+    display: none;
+}
+
+#car:active #green{
+    display: block;
+}
+
+#car:active #city{
+    background-position: left;
+
+}
+
+#mycar{
+    height: 131px;
+    width: 360px;
+    margin-top: 324px;
+    
+}
+
+.rwayd1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 289px;
+    top: -145px;
+    transition: transform 8s ease 0.5s, margin 8s ease 0.5s;
+    margin-top: 550px;
+  }
+  
+  
+.rwayd2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 56px;
+    top: -145px;
+    transition: transform 8s ease 0.5s, margin 8s ease 0.5s;
+    margin-top: 550px;
+  }
+
+.hdida{
+    position: absolute;
+    top: 295px;
+    left: 414px;
+    width: 5px;
+    height: 125px;
+    background-color: black;
+    border-radius: 1em;
+} 
+
