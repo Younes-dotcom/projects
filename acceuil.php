@@ -36,19 +36,28 @@ $result = mysqli_query($conn,$sql);
 if($result){
     echo "<table class='table'><th>Reference</th><th>Libelle</th><th>Prix Unitaire</th><th>Date Achat</th><th>Photo Produit</th><th>Categorie</th><th>Action</th>";
     while($row = mysqli_fetch_assoc($result)){
+        $ref = $row['reference'];
+        $libelle = $row['libelle'];
+        $prix = $row['prixUnitaire'];
+        $date = $row['dateAchat'];
+        $photo = $row['photoProduit'];
+        $denomination = $row['denomination'];
         echo "<tr>";
-        echo "<td>" .$row['reference']. "</td>";
-        echo "<td>" .$row['libelle']. "</td>";
-        echo "<td>" .$row['prixUnitaire']. "</td>";
-        echo "<td>" .$row['dateAchat']. "</td>";
-        echo "<td>" .$row['photoProduit']. "</td>";
-        echo "<td>" .$row['denomination']. "</td>";
-        echo "<td> <a href=''>Edit</a> <a href=''>Delete</a></td>";
+        echo "<td>" .$ref. "</td>";
+        echo "<td>" .$libelle. "</td>";
+        echo "<td>" .$prix. "</td>";
+        echo "<td>" .$date. "</td>";
+        echo "<td>" .$photo. "</td>";
+        echo "<td>" .$denomination. "</td>";
+        echo "<td><a href='deleteProduct.php?ref=".$ref."'>".  "Delete </a>";
+        echo "<a href='updateProduct.php?ref=".$ref. "&libelle=".$libelle ."&prix=".$prix ."&date=".$date."&denomination=".$denomination."'>".  "Update</a> </td>";
+
+
         echo "</tr>";
     }
 }
 ?>
-<a href="ajouterProduit.php">Ajouter Produit</a>
-<i class="bi bi-pencil"></i>
+<a href="ajouterProduit.php">Ajouter Produit</a> <br>
+<a href="login.php">deconnecter</a>
 </body>
 </html>

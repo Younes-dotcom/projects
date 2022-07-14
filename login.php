@@ -9,7 +9,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 <body>
-    <?php include 'connexion.php'?>
+    <?php include 'connexion.php';
+session_destroy();    ?>
     <div class='container-fluid'>
         <form class="text-center mt-5" action="login.php" method="GET">
             Login: <br>
